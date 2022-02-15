@@ -14,6 +14,8 @@ const sumPositiveAndNegative = (arr = []) => {
         }
     })
 
+    return [positive, negative]
+
 }
 
 console.log(sumPositiveAndNegative([1, 3, -4, 2, -13, -7]))
@@ -63,6 +65,29 @@ console.log(plusMinus([1, 2, 3, 4, 5, 9]))
 // -----------------------------------------------------------
 // 4. Remove Vowels
 
+
+
+
+
+
+// -----------------------------------------------------------
+// 5. Alphabet Value
+
+const alphabetValue = (idx) => {
+    const alphabetArr = "abcdefghijklmnopqrstuvwxyz".split("")
+    let string = idx.split("")
+    let number = 0
+
+    for (let i = 0; i < string.length; i++) {
+        number += alphabetArr.indexOf(idx[i]) + 1
+    }
+
+    return number
+
+}
+
+console.log(alphabetValue("abc"))
+console.log(alphabetValue("steve"))
 
 
 
