@@ -108,19 +108,23 @@ console.log(alphabetValue("steve"))
 // ------------------------------------------------------------
 // 6. Odd Alphabet Value
 
-// const alphabetValue = (idx) => {
-//     const alphabetArr = "abcdefghijklmnopqrstuvwxyz".split("")
-//     let string = idx.split("")
-//     let number = 0
+const oddAlphabetValue = (idx) => {
+    const oddAlphabetArr = "abcdefghijklmnopqrstuvwxyz".split("")
+    let string = idx.split("")
+    let number = 0
 
-//     for (let i = 0; i < string.length; i++) {
-//         number += alphabetArr.indexOf(idx[i]) + 1
-//     }
+    for (let i = 0; i < string.length; i++) {
+        if (!((oddAlphabetArr.indexOf(idx[i]) + 1) % 2 == 0))
+        
+        number += oddAlphabetArr.indexOf(idx[i]) + 1
+    }
 
+    return number
 
-//     return number
+}
 
-// }
+console.log(oddAlphabetValue("abc"))
+console.log(oddAlphabetValue("steve"))
 
 
 
