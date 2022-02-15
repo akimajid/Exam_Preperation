@@ -127,7 +127,7 @@ console.log(oddAlphabetValue("abc"))
 console.log(oddAlphabetValue("steve"))
 
 // ------------------------------------------------
-// Unique items
+// 7. Unique items
 
 const uniqueItems = (arr1, arr2) => {
     let result = []
@@ -146,6 +146,24 @@ const uniqueItems = (arr1, arr2) => {
 }
 
 console.log(uniqueItems([1, 3, 7, 4], [1, 5, 3, 7, 0]))
+
+// -----------------------------------------------------------
+// 8. Remove duplicate
+
+let arr1 = [1, 3, 7,4]
+let arr2 = [1, 5, 3, 7, 0]
+let arr3 = arr1.concat(arr2)
+
+const removeDuplicates = (val, idx, arr) => {
+    return arr.indexOf(val) == idx
+    
+}
+
+const remove = arr3.filter(removeDuplicates)
+
+console.log(remove)
+
+
 
 
 
