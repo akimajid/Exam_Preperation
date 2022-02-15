@@ -65,6 +65,22 @@ console.log(plusMinus([1, 2, 3, 4, 5, 9]))
 // -----------------------------------------------------------
 // 4. Remove Vowels
 
+const removeVowel = (string) => {
+    let alphabet = string.split("")
+    let result = []
+
+    for (let i = 0; i < alphabet.length; i++) {
+        if (!(alphabet[i] == "a" || alphabet[i] == "i" || alphabet[i] == "u" || alphabet[i] == "e" || alphabet[i] == 0)) {
+            result.push(alphabet[i])
+        } 
+
+    }
+
+    result = result.join("")
+    return result
+}
+
+console.log(removeVowel("javascript"))
 
 
 
@@ -88,6 +104,25 @@ const alphabetValue = (idx) => {
 
 console.log(alphabetValue("abc"))
 console.log(alphabetValue("steve"))
+
+// ------------------------------------------------------------
+// 6. Odd Alphabet Value
+
+// const alphabetValue = (idx) => {
+//     const alphabetArr = "abcdefghijklmnopqrstuvwxyz".split("")
+//     let string = idx.split("")
+//     let number = 0
+
+//     for (let i = 0; i < string.length; i++) {
+//         number += alphabetArr.indexOf(idx[i]) + 1
+//     }
+
+
+//     return number
+
+// }
+
+
 
 
 
